@@ -17,7 +17,7 @@ int main() {
     srand(time(NULL)); // Guardar los numeros aleatorios
 
     // Generar la matriz original y mostrarla con numeros aleatorios
-    printf("Matriz original:\n");
+    printf("Esta es la matriz transpuesta:\n");
     for (int n = 0; n < filas; n++) {
         for (int m = 0; m < columnas; m++) {
             matriz[n][m] = rand() % 101; // Asignamos el valor aleatorio de 0 a 100 a cada elemento de la matriz
@@ -35,7 +35,7 @@ int main() {
     }
 
     // Mostrar la matriz transpuesta
-    printf("\nMatriz transpuesta:\n");
+    printf("\nAqui esta la matriz original:\n");
     for (int n = 0; n < columnas; n++) {
         for (int m = 0; m < filas; m++) {
             printf("%d ", matrizTranspuesta[n][m]);
